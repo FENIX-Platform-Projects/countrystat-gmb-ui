@@ -1,0 +1,112 @@
+{
+  "items": [
+    {
+      "attrs": {
+        "id": "home"
+      },
+      "target": "index.html",
+      "label": {
+        "EN": "Home",
+        "FR": "Accueil"
+      }
+    },
+    {
+      "attrs": {
+        "id": "analysis"
+      },
+      "target": "analysis.html",
+      "label": {
+        "EN": "Search and Visualize",
+        "FR": "Rechercher et visualiser"
+      }
+    },
+    {
+      "attrs": {
+        "id": "createdataset"
+      },
+      "target": "createdataset.html",
+      "label": {
+        "EN": "Data Management",
+        "FR": "Gestion des données"
+      }
+    },
+    {
+      "attrs": {
+        "id": "modules"
+      },
+      "target": "modules.html",
+      "label": {
+        "EN": "Thematic modules",
+        "FR": "Modules thématiques"
+      }
+    }
+  ],
+  "rightItems": [
+    {
+      "attrs": {
+        "id": "keys"
+      },
+      "target": "keyindicators.html",
+      "label": {
+        "EN": "Key indicators",
+        "FR": "Indicateurs clefs"
+      }
+    },
+    {
+      "attrs": {
+        "id": "news"
+      },
+      "target": "#",
+      "label": {
+        "EN": "News",
+        "FR": "Nouvelles"
+      }
+    },
+    {
+      "attrs": {
+        "id": "documents"
+      },
+      "target": "#",
+      "label": {
+        "EN": "Documents",
+        "FR": "Documents"
+      }
+    },
+    {
+      "attrs": {
+        "id": "links"
+      },
+      "target": "#",
+      "label": {
+        "EN": "Links",
+        "FR": "Liens"
+      }
+    },
+    {
+      "attrs": {
+        "id": "login"
+      },
+      "label": {
+        "EN": "LOGIN",
+        "FR": "LOGIN"
+      }
+    },
+    {
+      "attrs": {
+        "id": "logout"
+      },
+      "label": {
+        "EN": "LOGOUT",
+        "FR": "LOGOUT"
+
+      }
+    }
+  ],
+  "type": "sidemenu",
+
+  "brand": {
+    "target": "index.html"
+  },
+
+  "languages": [ ]
+}

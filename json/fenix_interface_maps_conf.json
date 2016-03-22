@@ -1,0 +1,97 @@
+{
+   "offset":70,
+   "affix":{
+      "offset":{
+         "top":[
+            "nav.navbar-fixed-top",
+            "div.fx-header"
+         ]
+      }
+   },
+   "views":{
+      "#container_1":{
+         "event_pg_1":{
+            "content":{
+               "EN":"html/maps/page_1.html",
+               "FR":"http://url_FR"
+            }
+         },
+         "event_pg_2":{
+            "content":{
+               "EN":"html/maps/page_2.html",
+               "FR":"http://url_FR"
+            }
+         },
+         "event_pg_3":{
+              "content":{
+                  "EN":"html/maps/page_3.html",
+                  "FR":"http://url_FR"
+              }
+          },
+         "event_pg_4":{
+              "content":{
+                  "EN":"html/maps/page_4.html",
+                  "FR":"http://url_FR"
+              },
+              "callback":{
+                  "frequency":"once",
+                  "function":"callback 4"
+              }
+          },
+         "event_pg_5":{
+              "content":{
+                  "EN":"html/maps/page_5.html",
+                  "FR":"http://url_FR"
+              },
+              "callback":{
+                  "frequency":"once",
+                  "function":"callback 5"
+              }
+          },
+         "event_pg_6":{
+              "content":{
+                  "EN":"html/maps/page_6.html",
+                  "FR":"http://url_FR"
+              },
+              "callback":{
+                  "frequency":"once",
+                  "function":"callback 6"
+              }
+          }
+      }
+   },
+   "menu":{
+      "container":"#menu",
+      "items":[
+         {
+            "id":"id",
+            "page":"event_pg_1",
+            "label":{
+               "EN":"World Rice Production in 2013 (GAUL0)",
+               "IT":"Elemento 1"
+            }
+         },
+         {
+            "page":"event_pg_2",
+            "label":{
+               "EN":"Percentage of Rice Production Area in South-East Asia (GAUL1)",
+               "IT":"Elemento 2"
+            }
+         },
+          {
+              "page":"event_pg_3",
+              "label":{
+                  "EN":"Percentage of Rice Production Area in Thailand (GAUL2)",
+                  "IT":"Elemento 2"
+              }
+          },
+          {
+              "page":"event_pg_6",
+              "label":{
+                  "EN":"Time Series Temperature Anomalies (1986-2015)",
+                  "IT":"Elemento 2"
+              }
+          }
+      ]
+   }
+}

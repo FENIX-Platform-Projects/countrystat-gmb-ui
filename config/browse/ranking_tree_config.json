@@ -1,0 +1,19 @@
+[
+  {  "text" : "Root node 1",
+  "id" : "1"},
+  {
+    "text" : "Root node 2",
+    "id" : "2",
+
+    "state" : {
+      "opened" : true,
+      "selected" : true
+    },
+    "children" : [
+      {  "text" : "Root node 1",
+        "id" : "21"},
+      {  "text" : "Root node 1",
+        "id" : "22"}
+    ]
+  }
+]

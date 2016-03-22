@@ -1,0 +1,20 @@
+/* Uneca Theme */
+$fx-ui-common: '../submodules/fenix-ui-common/css/';
+
+@import 'themes/variables';
+
+/* Fenix Utils*/
+@import '../submodules/fenix-ui-common/css/fenix-style-no-variables';
+
+/* Pages */
+@import 'pages/analysis';
+@import 'pages/datamanagement';
+@import 'pages/home';
+
+//
+///* Components */
+//@import "components/bootstrap-fixed-height";
+
+/* Theme */
+@import "themes/side-menu";
+@import 'themes/theme';

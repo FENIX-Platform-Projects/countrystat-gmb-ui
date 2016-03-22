@@ -1,0 +1,18 @@
+[
+  {
+    "text": "Trade",
+    "id": "trade",
+    "state": {
+      "opened": true,
+      "selected": true
+    }
+  },
+  {
+    "text": "Production",
+    "id": "production"
+  },
+  {
+    "text": "Olap",
+    "id": "olap"
+  }
+]

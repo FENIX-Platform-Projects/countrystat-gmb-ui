@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html manifest="./cache.manifest">
+<head>
+    <title>FENIX Analysis</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="FENIX Analysis Interface">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Third Party CSS -->
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/jqwidgets/3.8.2/styles/jqx.base.css'/>
+    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/pnotify/2.0.1/pnotify.custom.min.css'/>
+    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/introjs/1.0.0/introjs.css'/>
+    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/nprogress/0.1.6/nprogress.css'/>
+    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/jquery.mb.extruder/2.5.5/css/mbExtruder.css'>
+    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/jstree/3.0.8/dist/themes/default/style.min.css'>
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/leaflet/0.7.3/leaflet.css"/>
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/jquery.power.tip/1.2.0/css/jquery.powertip.css"/>
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/jquery-ui/1.10.3/jquery-ui-1.10.3.custom.min.css"/>
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/select2/3.5.2/css/select2.css"/>
+    <link rel='stylesheet' href='//fenixrepo.fao.org/cdn/js/font-awesome-4.2.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/fenix-ui-map/0.0.1/fenix-ui-map.min.css"/>
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/jquery-treegrid/0.3.0/css/jquery.treegrid.css">
+
+    <!--&lt;!&ndash; FENIX CSS&ndash;&gt;-->
+    <!--<link rel="stylesheet" href="submodules/fenix-ui-common/css/fenix-style.css">-->
+    <link rel="stylesheet" href='submodules/fenix-ui-catalog/css/fenix-ui-catalog.css'/>
+    <!--<link rel="stylesheet" href='submodules/fenix-ui-analysis/css/host.css'/>-->
+
+
+    <!-- FENIX CSS -->
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/fenix-ui-map/0.0.1/fenix-ui-map.min.css"/>
+
+    <link rel="stylesheet" href='css/host.css'/>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="css/icons/fx-favicon.ico">
+
+</head>
+<body>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper"></div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper" class="indicator-content">
+
+
+        <div class="page-content-toolbar">
+            <a href="#menu-toggle" class="btn btn-default page-content-toolbar-btn" id="menu-toggle"> <span
+                    class="icojam_linen"></span></a>
+        </div>
+
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-xs-12"><h1>Key Indicator</h1></div>
+            </div>
+            <br>
+
+            <!-- socio demographic-->
+            <section class="holder-section">
+                <div class="row ">
+                    <h2 class="col-xs-12">Socio-demographic Indicators</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12" id="socio-demographic-indicator">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>Total Population (number of inhabitants) (2008)</td>
+                                <td>
+                                    12,620,219
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Population growth (2008)</td>
+                                <td>
+                                    2.5%<br></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Agricultural Population (number of inhabitants) (2008)
+                                </td>
+                                <td>
+                                    8,140,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Agricultural Population (annual growth rate) (1998-2008)
+                                </td>
+                                <td>
+                                    1.67%<br></td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    Rural Population (% on Total Population) (2008)<br></td>
+                                <td>64.6%<br></td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    Unemployment (% of total labor force)<br></td>
+                                <td>
+
+                                    12.9%<br></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ratio of economically active male to female population in agriculture (2008)<br>
+                                </td>
+                                <td>
+
+                                    1.14<br></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- poverty and hunger-->
+            <section class="holder-section">
+                <div class="row">
+                    <h2 class="col-xs-12">Poverty and Hunger Indicators</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12" id="poverty-indicator">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>Rural poor as a percent of total poor population<br></td>
+                                <td>n.a<br></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Rural hungry as a percent of total hungry population
+                                </td>
+                                <td>
+                                    n.a<br></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Rural extreme poor as a percent of total extreme poor population<br></td>
+                                <td>n.a<br></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Undernourished people on total population (%) (2004-2006) <br></td>
+                                <td>
+                                    45.0%<br></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Dietary Energy Supply (DES) (kcal/person/day)<br></td>
+                                <td>
+                                    1990-92: 1,960<br>1995-97: 1,940<br>2000-02: 1,890<br>2004-06: 1,890<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Annual Growth of Dietary Energy Supply (DES)<br></td>
+                                <td>1990-92, 1995-97: -0.2%<br>1995-97, 2000-02: -0.5%<br>2000-02, 2004-06: 0.0% <br>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- economic -->
+            <section class="holder-section">
+                <div class="row">
+                    <h2 class="col-xs-12">Economic Indicators</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12" id="economic-indicator">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>GDP (current US$) (2008)</td>
+                                <td>
+                                    14,313,899,286
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    GNI per capita (current US$) (2008)<br></td>
+                                <td>
+                                    950.0<br></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Agricultural GDP on total GDP (%) (2008)<br></td>
+                                <td>
+                                    21.2%<br></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    National budget spent on agriculture (%) (2008)<br></td>
+                                <td>
+                                    n.d.<br></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    National budget spent on rural development (%) (2008)<br></td>
+                                <td> n.d.<br></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- trade-->
+            <section class="holder-section">
+                <div class="row">
+                    <h2 class="col-xs-12">Trade Indicators</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6" id="trade-indicator-import">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Imports of major agricultural commodities (2007)</th>
+                                <th>Quantity (tonnes)</th>
+                                <th>Value (current US$)</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    Fat Prep Nes
+                                </td>
+                                <td>
+                                    23,015
+                                </td>
+                                <td>
+                                    30,377,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Food Prep Nes
+                                </td>
+                                <td>
+                                    6,039
+                                </td>
+                                <td>
+                                    9,744,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Cigarettes
+                                </td>
+                                <td>
+                                    965
+                                </td>
+                                <td>
+                                    8.515.000
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="col-xs-6" id="trade-indicator-export">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Exports of major agricultural commodities (2010)</th>
+                                <th>Quantity (tonnes)</th>
+                                <th>Value (current US$)</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    Tobacco, unmanufactured
+                                </td>
+                                <td>
+                                    36,649
+                                </td>
+                                <td>
+                                    115,039,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Cotton lint
+                                </td>
+                                <td>
+                                    32.314
+                                </td>
+                                <td>
+                                    39,409,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Sugar Raw Centrifugal
+                                </td>
+                                <td>
+                                    43,290
+                                </td>
+                                <td>
+                                    29,233,000
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-xs-12" id="trade-indicator-overall">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    Merchandise imports (current US$) (2008)
+                                </td>
+                                <td>
+                                    5,070,162,196
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Merchandise exports (current US$) (2010)
+                                </td>
+                                <td>
+                                    5,092,7666,268
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Share of agriculture imports on total merchandise (%) (2010)
+                                </td>
+                                <td>
+                                    3.97%
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Share of agriculture exports on total merchandise (%) (2010)
+                                </td>
+                                <td>
+                                    5.77%
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- land-->
+            <section class="holder-section">
+                <div class="row">
+                    <h2 class="col-xs-12">Land and Inputs</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12" id="land-indicator">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    Total land area (ha) (2007)
+                                </td>
+                                <td>
+                                    74,339,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Agricultural Land Area (ha) (2007)
+                                </td>
+                                <td>
+                                    25,589,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Arable land (% of Agricultural Land Area) (2007)
+                                </td>
+                                <td>
+                                    20.6%
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Irrigated land (% on Agricultural Land Area) (2007)
+                                </td>
+                                <td>
+                                    n.a
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Forest area (% of land area) (2007)
+                                </td>
+                                <td>
+                                    55.9%
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Agric.Water Withdrawal (% of total freshwater withdrawal) (2002)
+                                </td>
+                                <td>
+                                    40.0%
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Fertilizer Consumption (tonnes) (2007)
+                                </td>
+                                <td>
+                                    70,642
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Pesticides consumption (metric tonnes) (2007)
+                                </td>
+                                <td>
+                                    n.a
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tractor in use (numbers) (2007)
+                                </td>
+                                <td>
+                                    6,000
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- production quantity-->
+            <section class="holder-section">
+                <div class="row">
+                    <h2 class="col-xs-12">Production quantity of major agricultural national commodities</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12" id="production-indicator-total">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Major Crops (2010)</th>
+                                <th>Quantity (tonnes)</th>
+                                <th>Yield (hg/ha)</th>
+                                <th>Yield Annual Growth</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    Sugar Cane
+                                </td>
+                                <td>
+                                    2,500,000
+                                </td>
+                                <td>
+                                    1,041,667
+                                </td>
+                                <td>
+                                    1987-1997: -0.6%<br>
+                                    1997-2007: -0.3%
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Maize
+                                </td>
+                                <td>
+                                    1,366,158
+                                </td>
+                                <td>
+                                    18,974
+                                </td>
+                                <td>
+                                    1987-1997: -1.5%<br>
+                                    1997-2007: 2.8%
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Cassava
+                                </td>
+                                <td>
+                                    1,146,000
+                                </td>
+                                <td>
+                                    57,279
+                                </td>
+                                <td>
+                                    1987-1997: 0.0%<br>
+                                    1997-2007: -0.7%
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Vegetable Fresh Nes
+                                </td>
+                                <td>
+                                    215,000
+                                </td>
+                                <td>
+                                    63,325
+                                </td>
+                                <td>
+                                    1987-1997: 0.5%<br>
+                                    1997-2007: -0.1%
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12" id="production-animals">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Livestock - Number of Live Animals (2009)</th>
+                                <th>Quantity</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    Chickens
+                                </td>
+                                <td>
+                                     15,244,957
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Goats
+                                </td>
+                                <td>
+                                     956,304
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Cattle
+                                </td>
+                                <td>
+                                     2,457,304
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Pigs </td>
+                                <td>
+                                     538,393
+                                </td>
+                            </tr>
+                            </tbody></table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6" id="production-meat">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Meat Production (tonnes) (2009)</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    Cattle meat
+                                </td>
+                                <td>
+                                    58,400
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Chiken meat
+                                </td>
+                                <td>
+                                    n.a </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Game meat
+                                </td>
+                                <td>
+                                    33,500
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Pig meat
+                                </td>
+                                <td>
+                                    11,000
+                                </td>
+                            </tr>
+                            </tbody></table>
+                    </div>
+                    <div class="col-xs-6" id="production-fish">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Fish Production (tonnes) (2007)</th>
+                                    <th>1997</th>
+                                    <th>2007</th>
+                                    <th>Annual Growth</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    Capture fish production
+                                </td>
+                                <td>
+                                    65,923
+                                </td>
+                                <td>
+                                    88,894
+                                </td>
+                                <td>
+                                    1987-1997:0.32%<br>
+                                    1997-2007: 33.24%
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Aquaculture fish production
+                                </td>
+                                <td>
+                                    4,718
+                                </td>
+                                <td>
+                                    8,876
+                                </td>
+                                <td>
+                                    1987-1997: 1.16%<br>
+                                    1997-2007: 2.45%
+                                </td>
+                            </tr>
+                            </tbody></table>
+                    </div>
+
+                </div>
+                <ul>
+                <li ><small>Annual Growth in Value added livestock sector:	n.a.</small></li>
+                <li><small>Food Production Index (base 1999-2001) (2007):	115</small></li>
+                </ul>
+            </section>
+
+
+            <br><br>
+
+            <!-- sources-->
+            <section class="holder-section">
+                <div class="row">
+                    <h2 class="col-xs-12">Sources</h2>
+                </div>
+
+                <ul>
+                    <li>FAOSTAT</li>
+                    <li>FishSTAT</li>
+                    <li>Aquastat</li>
+                    <li>World Bank</li>
+                    <li>IFAD</li>
+
+                </ul>
+
+            </section>
+
+
+            <div></div>
+
+
+        </div>
+
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+
+<!-- ==========
+     Javascript -->
+<script data-main="scripts/mains/indicators" src="//fenixrepo.fao.org/cdn/js/requirejs/2.1.15/require.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+﻿[
+  {
+    "val": "Afghanistan_Agriculture",
+    "text": {
+      "EN": "Afghanistan Agriculture"
+    },
+    "subject": "item"
+  },
+  {
+    "val": "Afghanistan_Education",
+    "text": {
+      "EN": "Afghanistan Education"
+    },
+    "subject": "item"
+  },
+  {
+    "val": "CountrySTAT_commodityList",
+    "text": {
+      "EN": "CountrySTAT Commodity List"
+    },
+    "subject": "item"
+  },
+  {
+    "val": "CountrySTAT_Labour",
+    "text": {
+      "EN": "CountrySTAT Labour"
+    },
+    "subject": "item"
+  },
+  {
+    "val": "CountrySTAT_LandUse",
+    "text": {
+      "EN": "CountrySTAT Land Use"
+    },
+    "subject": "item"
+  },
+  {
+    "val": "CountrySTAT_population",
+    "text": {
+      "EN": "CountrySTAT Population"
+    },
+    "subject": "item"
+  },
+  {
+    "val": "CountrySTAT_pricesCategories",
+    "text": {
+      "EN": "CountrySTAT Prices Categories"
+    },
+    "subject": "item"
+  },
+  {
+    "val": "CountrySTAT_valueAdded",
+    "text": {
+      "EN": "CountrySTAT Value Added"
+    },
+    "subject": "item"
+  },
+  {
+    "val": "GAUL1_AFG",
+    "text": {
+      "EN": "GAUL1 Afghanistan"
+    },
+    "subject": "geo"
+  },
+  {
+    "val": "GAUL0_AFG_Partners",
+    "text": {
+      "EN": "GAUL0 Partners"
+    },
+    "subject": "geo"
+  },
+  {
+    "val": "GAUL0|2014",
+    "text": {
+      "EN": "GAUL 0"
+    },
+    "subject": "geo"
+  }
+]

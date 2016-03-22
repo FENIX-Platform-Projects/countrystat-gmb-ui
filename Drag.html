@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html manifest="./cache.manifest">
+<head>
+    <title>CountrySTAT Zambia</title>
+    <script src="http://fenixapps.fao.org/repository/js/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <table id="tblMove">
+        <tbody></tbody>
+    </table>
+
+    <script type="text/javascript">
+        $(document).ready(function () { start(); });
+
+        var items = ["Item1", "Item2", "Item3", "Item4"];
+
+        function start() {
+            var $tblMove = $("#tblMove");
+            var $tb = $tblMove.find("tbody");
+            var hh = '<tr id="%itemID%"><td>%name%</td><td><button data-itemid="%itemID%" data-dir="up">Up</button></td><td><button data-itemid="%itemID%" data-dir="down">Down</button></td></tr>';
+            for (var i = 0; i < items.length; i++) {
+                toApp = hh.replace("%name%", items[i]);
+                toApp = toApp.replace("%itemID%", items[i]);
+                toApp = toApp.replace("%itemID%", items[i]);
+                toApp = toApp.replace("%itemID%", items[i]);
+                $tb.append(toApp);
+            }
+            $tb.find("button").on("click", function () {
+                var dir = $(this).data("dir");
+                var itemId = $(this).data("itemid");
+                updateUI(itemId, dir);
+            });
+        };
+
+        function updateUI(id, dir) {
+            var $tb = $("table").find("tbody");
+            var rows = $tb.find("tr");
+            var idIdx = -1;
+            var toReplace = -1;
+            for (var i = 0; i < rows.length; i++) {
+                var rId = $(rows[i]).attr('id');
+                if (rId == id) {
+                    idIdx = i;
+                    if (dir == 'up')
+                        toReplace = i - 1;
+                    else
+                        toReplace = i + 1;
+                    break;
+                }
+            }
+            if (toReplace < 0 || toReplace >= rows.length)
+                return;
+            if (dir == 'up') {
+                $("#" + id).prev().before($("#" + id));
+            }
+            else {
+                $("#" + id).next().after($("#" + id));
+            }
+        };
+    </script>
+
+</body>
+</html>

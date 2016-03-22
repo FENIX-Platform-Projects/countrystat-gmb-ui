@@ -1,0 +1,87 @@
+[
+    {
+        "value": "GAUL|2014",
+        "text": {
+            "EN": "GAUL"
+        },
+        "subject": "geo"
+    },
+    {
+        "value": "CPC|2.1",
+        "text": {
+            "EN": "CPC 2.1"
+        },
+        "subject": "item"
+    },
+
+
+    {
+        "value": "CountrySTAT_Agricultural_Population",
+        "text": {
+            "EN": "Agricultural Population"
+        },
+        "subject": "agriculturalPopulation"
+    },
+    {
+        "value": "CountrySTAT_DAC",
+        "text": {
+            "EN": "DAC"
+        },
+        "subject": "sector"
+    },
+    {
+        "value": "CountrySTAT_Field_Management",
+        "text": {
+            "EN": "Field Management"
+        },
+        "subject": "fieldManagement"
+    },
+    {
+        "value": "CountrySTAT_Food",
+        "text": {
+            "EN": "Food"
+        },
+        "subject": "food"
+    },
+    {
+        "value": "CountrySTAT_Gender",
+        "text": {
+            "EN": "Gender"
+        },
+        "subject": "gender"
+    },
+    {
+        "value": "CountrySTAT_Residence",
+        "text": {
+            "EN": "Residence"
+        },
+        "subject": "residence"
+    },
+
+
+
+
+
+
+    {
+        "value": "CountrySTAT_Indicators",
+        "text": {
+            "EN": "CountrySTAT Indicators"
+        },
+        "subject": "indicator"
+    },
+    {
+        "value": "CountrySTAT_HS|2012",
+        "text": {
+            "EN": "HS 2012"
+        },
+        "subject": "item"
+    },
+    {
+        "value": "CountrySTAT_UM",
+        "text": {
+            "EN": "CountrySTAT UM"
+        },
+        "subject": "um"
+    }
+]

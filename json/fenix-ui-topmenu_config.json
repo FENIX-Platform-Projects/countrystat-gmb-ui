@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "attrs": {
+        "id": "createdataset"
+      },
+      "target": "createdataset.html",
+      "label": {
+        "EN": "Data Management",
+        "FR": "PI"
+      }
+    }
+  ],
+  "type": "fixed-top",
+  "brand": {
+    "target": "index.html"
+  },
+  "languages": [
+    {
+      "lang": "EN",
+      "label": "En"
+    },
+    {
+      "lang": "FR",
+      "label": "Fr"
+    }
+  ]
+}

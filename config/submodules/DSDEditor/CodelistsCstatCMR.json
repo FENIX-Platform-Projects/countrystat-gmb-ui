@@ -1,0 +1,30 @@
+[
+  {
+    "value": "GAUL|2014",
+    "text": {
+      "EN": "GAUL"
+    },
+    "subject": "geo"
+  },
+  {
+    "value": "CPC|2.1",
+    "text": {
+      "EN": "CPC 2.1"
+    },
+    "subject": "item"
+  },
+  {
+    "value": "CountrySTAT_Indicators",
+    "text": {
+      "EN": "CountrySTAT Indicators"
+    },
+    "subject": "item"
+  },
+  {
+    "value": "CountrySTAT_UM",
+    "text": {
+      "EN": "CountrySTAT UM"
+    },
+    "subject": "um"
+  }
+]
