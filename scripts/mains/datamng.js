@@ -64,7 +64,7 @@ require([
                     rsvp: '{FENIX_CDN}/js/rsvp/3.0.17/rsvp',
                     'bootstrap-datetimepicker': "{FENIX_CDN}/js/bootstrap-datetimepicker/3.1.3/bootstrap-datetimepicker",
 
-                    //'fx-menu/templates': '../../scripts/templates',
+                    'fx-menu/templates': '../../scripts/templates',
                     'fx-d-m/templates/site' : '../../scripts/templates/site-sidemenu.hbs',
 
                     pnotify: '{FENIX_CDN}/js/pnotify/2.0.1/pnotify.custom.min',
