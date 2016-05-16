@@ -7,7 +7,7 @@
 }
 
 .country-details{
-  background-image: url(img/zam-home.jpg);
+  background-image: url(img/gam-home.jpg);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -130,9 +130,10 @@ background-color: $afg-home-background;
 
       }
 
-      .col-xs-2{
+      .col-xs-2, .col-xs-3{
         padding-top: 12px;
         position: relative;
+
 
 
         &:before{
@@ -183,7 +184,7 @@ background-color: $afg-home-background;
 }
 
 .partners-holder{
-  background-color: #e0f1ee;
+  background-color: #ede4e6;
   min-height: 100px;
 
   h4{
@@ -278,7 +279,7 @@ ol li:before {
   }
 
   .news-image{
-    background-image: url(img/zam-working-group.jpg);
+    background-image: url(img/gam-working-group.jpg);
     background-size: cover;
     background-position: 50% 50%;
     height: 50%;
@@ -294,7 +295,7 @@ ol li:before {
 .home-tile.map{
   background-color: $afg-map-tile;
   position: relative;
-  background-image: url("img/home-map-zambia.svg");
+  background-image: url("img/home-map-gambia.svg");
   background-size: 570px 371px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -307,7 +308,7 @@ ol li:before {
 
   &:hover{
     background-size: 1600px 1035px;
-    background-position: 50% 76%;
+    background-position: 39% 76%;
     -webkit-transition: all 1s ease 0.2s;
     -moz-transition: all 1s ease 0.2s;
     -o-transition: all 1s ease 0.2s;

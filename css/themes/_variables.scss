@@ -24,7 +24,7 @@ $fx-text-smalltitle-bold: normal normal 700 12px/normal 'Roboto';
 $fenix-standard-blue: rgba(53, 166, 220, 1);
 //$fx-cool-blue:  red;
 
-$fx-cool-blue:  #db514b;
+$fx-cool-blue:  #08b077;
 
 $fx-secondary-color: desaturate( $fx-cool-blue, 50% );
 
@@ -42,26 +42,28 @@ $fenix-light-bg: #f8f8f8;
 $light-purple: #EEEEFF;
 $light-brown: #f3efe0;
 
+$superlight-gray: #f2f2f2;
+
 
 $fenix-hr: #d8d8d8;
 $fenix-hr-footer: #666666;
 
 $fenix-thin-border: 1px solid $fenix-hr;
 
-$afg-custom-color1: #29403e;
+$afg-custom-color1: #3a2e2f;
 
-$afg-custom-color2: #305a52;
-$afg-custom-color3: #3a7f70;
-$afg-yellow: #e4c779;
-$afg-yellow-light: #f5e5bb;
+$afg-custom-color2: #503a3e;
+$afg-custom-color3: #6e4a52;
+$afg-yellow: #92a1ca;
+$afg-yellow-light: #c9d1e7;
 $afg-false-white: #e0e9f0;
 $afg-light-blue-bg: #e0e9f1;
 $afg-light-blue-text: #abb9c4;
-$afg-light-blue-big-text: #b8d7da;
+$afg-light-blue-big-text: #d2c2c0;
 
-$afg-blue-tile: #869c93;
-$afg-map-tile: #97bead;
-$afg-home-background: #2b686a;
+$afg-blue-tile: #978b90;
+$afg-map-tile: #b4a0a9;
+$afg-home-background: #5b3b3a;
 
 // Specials
 $white-alpha: rgba(255, 255, 255, 0.9);
