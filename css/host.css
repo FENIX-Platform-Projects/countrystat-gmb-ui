@@ -14488,6 +14488,16 @@ input[type="radio"]:disabled + label {
   padding: 0;
   width: 100%; }
 
+.catalog-dm {
+  position: static;
+  display: block;
+  opacity: 1;
+  overflow: visible; }
+  .catalog-dm .modal-dialog {
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important; }
+
 .datamng-welcome {
   text-align: center;
   width: 350px;

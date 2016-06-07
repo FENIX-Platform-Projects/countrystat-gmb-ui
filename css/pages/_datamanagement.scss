@@ -8,6 +8,19 @@
   }
 }
 
+.catalog-dm{
+  position: static;
+  display: block;
+  opacity: 1;
+  overflow: visible;
+
+  .modal-dialog{
+    @include fx-transfor-me(none !important);
+
+  }
+
+}
+
 
 
 .datamng-welcome{
@@ -122,3 +135,5 @@
 .datamng-container{
   padding: 0;
 }
+
+
