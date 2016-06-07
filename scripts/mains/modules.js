@@ -2,14 +2,14 @@
 // relative or absolute path of Components' main.js
 require([
     '../../submodules/fenix-ui-common/js/Compiler',
-    '../../submodules/fenix-ui-menu/js/paths',
+    '../../submodules/fenix-ui-menu/src/js/paths',
     '../../submodules/fenix-ui-common/js/paths'
 ], function (Compiler, Menu,Common) {
 
     'use strict';
 
     var menuConfig = Menu;
-    menuConfig.baseUrl = '../../submodules/fenix-ui-menu/js';
+    menuConfig.baseUrl = '../../submodules/fenix-ui-menu/src/js';
 
     var commonConfig = Common;
     commonConfig.baseUrl = '../../submodules/fenix-ui-common/js';

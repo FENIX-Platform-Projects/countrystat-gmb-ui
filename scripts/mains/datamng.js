@@ -5,14 +5,13 @@ require([
     '../../submodules/fenix-ui-common/js/paths',
     '../../submodules/fenix-ui-datamanagement-commons/js/paths',
     '../../submodules/fenix-ui-DataEditor/js/paths',
-    //'../../submodules/fenix-ui-dataUpload/js/paths',
     '../../submodules/fenix-ui-DSDEditor/js/paths',
     '../../submodules/fenix-ui-metadata-editor/js/paths',
-    '../../submodules/fenix-ui-catalog/js/paths',
-    '../../submodules/fenix-ui-menu/js/paths',
-    '../../submodules/fenix-ui-data-management/src/js/paths'
-//], function (Compiler, FenixCommons, DataEditor, DataUpload, DSDEditor, MetadataEditor, Catalog, Menu, DataMng) {
-], function (Compiler, FenixCommons, DataMngCommons, DataEditor, DSDEditor, MetadataEditor, Catalog, Menu, DataMng) {
+    '../../submodules/fenix-ui-catalog/src/js/paths',
+    '../../submodules/fenix-ui-menu/src/js/paths',
+    '../../submodules/fenix-ui-data-management/src/js/paths',
+    '../../submodules/fenix-ui-filter/src/js/paths'
+], function (Compiler, FenixCommons, DataMngCommons, DataEditor, DSDEditor, MetadataEditor, Catalog, Menu, DataMng, Filter) {
 
     'use strict';
 
@@ -22,9 +21,6 @@ require([
     var dataMngCommonsConfig = DataMngCommons;
     dataMngCommonsConfig['baseUrl'] = '../../submodules/fenix-ui-datamanagement-commons/js';
 
-    /*var dataUploadConfig = DataUpload;
-    dataUploadConfig.baseUrl = '../../submodules/fenix-ui-dataUpload/js/';*/
-
     var dsdEditorConfig = DSDEditor;
     dsdEditorConfig.baseUrl = '../../submodules/fenix-ui-DSDEditor/js';
 
@@ -32,10 +28,10 @@ require([
     metadataEditorConfig.baseUrl = '../../submodules/fenix-ui-metadata-editor/js/';
 
     var catalogConfig = Catalog;
-    catalogConfig.baseUrl = '../../submodules/fenix-ui-catalog/js/';
+    catalogConfig.baseUrl = '../../submodules/fenix-ui-catalog/src/js/';
 
     var menuConfig = Menu;
-    menuConfig.baseUrl = '../../submodules/fenix-ui-menu/js';
+    menuConfig.baseUrl = '../../submodules/fenix-ui-menu/src/js';
 
     var dataMngConfig = DataMng;
     dataMngConfig.baseUrl = '../../submodules/fenix-ui-data-management/src/js';
@@ -43,8 +39,10 @@ require([
     var fenixCommonConfig = FenixCommons;
     fenixCommonConfig.baseUrl = '../../submodules/fenix-ui-common/js';
 
-    //Compiler.resolve([dataEditorConfig, dataUploadConfig, dsdEditorConfig, metadataEditorConfig, catalogConfig, menuConfig, dataMngConfig, fenixCommonConfig],
-    Compiler.resolve([dataEditorConfig, dataMngCommonsConfig, dsdEditorConfig, metadataEditorConfig, catalogConfig, menuConfig, dataMngConfig, fenixCommonConfig],
+    var filterConfig = Filter;
+    filterConfig.baseUrl = '../../submodules/fenix-ui-filter/src/js/';
+
+    Compiler.resolve([dataEditorConfig, dataMngCommonsConfig, dsdEditorConfig, metadataEditorConfig, catalogConfig, menuConfig, dataMngConfig, fenixCommonConfig, filterConfig],
         {
             placeholders: {"FENIX_CDN": "//fenixrepo.fao.org/cdn"},
             config: {
@@ -63,21 +61,23 @@ require([
                     amplify: '{FENIX_CDN}/js/amplify/1.1.2/amplify.min',
                     rsvp: '{FENIX_CDN}/js/rsvp/3.0.17/rsvp',
                     'bootstrap-datetimepicker': "{FENIX_CDN}/js/bootstrap-datetimepicker/3.1.3/bootstrap-datetimepicker",
+                    'packery': '{FENIX_CDN}/js/packery/1.4.3/dist/packery.pkgd.min',
 
-                    'fx-menu/templates': '../../scripts/templates',
+                    //'fx-menu/templates': '../../scripts/templates',
                     'fx-d-m/templates/site' : '../../scripts/templates/site-sidemenu.hbs',
 
                     pnotify: '{FENIX_CDN}/js/pnotify/2.0.1/pnotify.custom.min',
-                    //'fx-menu/templates': '../../scripts/templates',
+                    'fx-menu/templates': '../../scripts/templates',
 
+                    'fx-common/config/auth_users': "../../config/auth_users.json",
 
 
                     'fx-d-m/config/config': '../../config/submodules/datamng/config',
-                    'fx-cat-br/config/config': '../../config/submodules/catalog/config',
+                    //'fx-catalog/config/config': '../../config/submodules/catalog/config',
 
-/*
-                    'fx-d-m/templates/site' : '../../submodules/fenix-ui-data-management/src/js/templates/site-sidemenu.hbs',
-*/
+                    /*
+                     'fx-d-m/templates/site' : '../../submodules/fenix-ui-data-management/src/js/templates/site-sidemenu.hbs',
+                     */
 
                     'fx-submodules/config/baseConfig': '../../config/submodules/config_base'
 

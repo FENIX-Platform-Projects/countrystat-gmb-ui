@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html>
+<!--
+<html manifest="./cache.manifest">
+-->
 <head>
     <title>FENIX Analysis</title>
 
@@ -11,32 +13,38 @@
     <meta name="description" content="FENIX Analysis Interface">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Third Party CSS -->
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900,400italic' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/jqwidgets/3.8.2/styles/jqx.base.css'/>
-    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/pnotify/2.0.1/pnotify.custom.min.css'/>
-    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/introjs/1.0.0/introjs.css'/>
-    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/nprogress/0.1.6/nprogress.css'/>
-    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/jquery.mb.extruder/2.5.5/css/mbExtruder.css'>
-    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/jstree/3.0.8/dist/themes/default/style.min.css'>
-    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/leaflet/0.7.3/leaflet.css"/>
-    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/jquery.power.tip/1.2.0/css/jquery.powertip.css"/>
-    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/jquery-ui/1.10.3/jquery-ui-1.10.3.custom.min.css"/>
-    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/select2/3.5.2/css/select2.css"/>
-    <link rel='stylesheet' href='//fenixrepo.fao.org/cdn/js/font-awesome-4.2.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/fenix-ui-map/0.0.1/fenix-ui-map.min.css"/>
+
+    <link rel="stylesheet" href="http://fenixrepo.fao.org/cdn/js/bootstrap-table/1.10.1/dist/bootstrap-table.min.css" />
+
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/leaflet/0.7.3/leaflet.css" />
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/jquery.powertip/1.2.0/css/jquery.powertip.css" type="text/css" />
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/jquery-ui/1.10.3/jquery-ui-1.10.3.custom.min.css" />
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/chosen/1.2.0/chosen.min.css" />
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/swiper/3.3.1/dist/css/swiper.min.css">
+
+    <!-- pivot -->
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/sigma.grid/2.4/gt_grid_height.css"/>
+    <!-- FENIX filter -->
+    <!-- dropdown selector -->
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/selectize/0.12.1/css/selectize.bootstrap3.css" />
+    <!-- tree selector -->
+    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/jstree/3.3.0/dist/themes/default/style.min.css'>
+    <!-- range selector -->
+    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/ion.rangeSlider/2.1.2/css/ion.rangeSlider.css'>
+    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/ion.rangeSlider/2.1.2/css/ion.rangeSlider.skinHTML5.css'>
+    <!-- time selector -->
+    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/bootstrap-datetimepicker/4.17.37/build/css/bootstrap-datetimepicker.min.css'>
+    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/bootstrap-daterangepicker/2.1.19/daterangepicker.css'>
+    <!-- end FENIX filter -->
+    <!-- metadata viewer-->
     <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/jquery-treegrid/0.3.0/css/jquery.treegrid.css">
 
-    <!--&lt;!&ndash; FENIX CSS&ndash;&gt;-->
-    <!--<link rel="stylesheet" href="submodules/fenix-ui-common/css/fenix-style.css">-->
-    <link rel="stylesheet" href='submodules/fenix-ui-catalog/css/fenix-ui-catalog.css'/>
-    <!--<link rel="stylesheet" href='submodules/fenix-ui-analysis/css/host.css'/>-->
-
-
     <!-- FENIX CSS -->
-    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/fenix-ui-map/0.0.1/fenix-ui-map.min.css"/>
-
-    <link rel="stylesheet" href='css/host.css'/>
+    <link rel="stylesheet" href="css/host.css">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="css/icons/fx-favicon.ico">
@@ -86,7 +94,7 @@
 
         <div class="page-content-toolbar">
             <a href="#menu-toggle" class="btn btn-default page-content-toolbar-btn" id="menu-toggle"> <span class="icojam_linen"></span></a>
-            <a class="btn btn-default open-overlay page-content-toolbar-btn" > <img src="css/icons/catalog-ico.svg" class="catalog-ico img-responsive"></a>
+            <!--<a class="btn btn-default open-overlay page-content-toolbar-btn" > <img src="css/icons/catalog-ico.svg" class="catalog-ico img-responsive"></a>-->
         </div>
 
         <div class="container-fluid">
@@ -95,7 +103,7 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="container-fluid">
+                    <div class="container">
 
                         <!-- header -->
                         <div class="row fx-header">
