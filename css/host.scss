@@ -1,3 +1,25 @@
+///* Uneca Theme */
+//$fx-ui-common: '../submodules/fenix-ui-common/css/';
+//
+//@import 'themes/variables';
+//
+///* Fenix Utils*/
+//@import '../submodules/fenix-ui-common/css/fenix-style-no-variables';
+//
+///* Pages */
+//@import 'pages/analysis';
+//@import 'pages/datamanagement';
+//@import 'pages/home';
+//
+////
+/////* Components */
+////@import "components/bootstrap-fixed-height";
+//
+///* Theme */
+//@import "themes/side-menu";
+//@import 'themes/theme';
+
+
 /* Uneca Theme */
 $fx-ui-common: '../submodules/fenix-ui-common/css/';
 
@@ -5,6 +27,53 @@ $fx-ui-common: '../submodules/fenix-ui-common/css/';
 
 /* Fenix Utils*/
 @import '../submodules/fenix-ui-common/css/fenix-style-no-variables';
+
+
+
+
+
+/* Fenix Common CSS */
+//@import '../submodules/fenix-ui-common/css/themes/fx-variables';
+
+/* Boostrap Queries */
+@import '../submodules/fenix-ui-common/css/themes/fx-bootstrap-queries';
+
+$fx-ui-common: '../submodules/fenix-ui-common/';
+
+@import '../submodules/fenix-ui-common/css/components/fx-icons';
+
+@import '../submodules/fenix-ui-common/css/utils/fx-mixins';
+@import '../submodules/fenix-ui-common/css/components/fx-dropdown';
+@import '../submodules/fenix-ui-common/css/components/fx-preload';
+
+
+@import '../submodules/fenix-ui-common/css/base/fx-typography';
+@import '../submodules/fenix-ui-common/css/base/fx-fonts-import';
+
+
+
+@import '../submodules/fenix-ui-common/css/components/fx-tabs';
+@import '../submodules/fenix-ui-common/css/components/fx-buttons';
+@import '../submodules/fenix-ui-common/css/components/fx-fixed-height';
+@import '../submodules/fenix-ui-common/css/components/fx-material-theme-light';
+@import '../submodules/fenix-ui-common/css/components/fx-metadata-viewer';
+@import '../submodules/fenix-ui-common/css/vendor/fx-jstree';
+@import '../submodules/fenix-ui-common/css/components/fx-radio-checkbox';
+
+
+
+
+@import '../submodules/fenix-ui-analysis/src/css/analysis';
+@import '../submodules/fenix-ui-catalog/src/css/catalog';
+@import '../submodules/fenix-ui-filter/src/css/filter';
+
+@import '../submodules/fenix-ui-map/src/css/fx_map';
+@import '../submodules/fenix-ui-olap/src/css/olap';
+
+@import '../submodules/fenix-ui-visualization-box/src/css/visualization-box';
+
+
+
 
 /* Pages */
 @import 'pages/analysis';
@@ -18,3 +87,4 @@ $fx-ui-common: '../submodules/fenix-ui-common/css/';
 /* Theme */
 @import "themes/side-menu";
 @import 'themes/theme';
+
