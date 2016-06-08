@@ -1,5 +1,5 @@
 {
     "dsd.contextSystem" : {
-        "enumeration" : ["cstat_gmb"]
+        "enumeration" : ["cstat_gmb","crowd_cstat_gmb"]
     }
 }

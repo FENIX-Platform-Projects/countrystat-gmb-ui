@@ -92,9 +92,11 @@ define([
                     selector : {
                         id : "dropdown",
                         source : [
-                            {value : "cstat_gmb", label : "CountrySTAT Gambia"}
+                            {value : "cstat_gmb", label : "CountrySTAT Gambia"},
+                            {value : "cstat_gmb_crowd", label : "CrowdPrices Gambia"}
+
                         ],
-                        default : ["cstat_gmb"],
+                        default : ["cstat_gmb","cstat_gmb_crowd"],
                         hideSummary : true
                     },
 
