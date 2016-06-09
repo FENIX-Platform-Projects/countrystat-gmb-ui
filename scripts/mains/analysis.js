@@ -99,7 +99,7 @@ require([
     Compiler.resolve([commonConfig, catalogConfig, menuConfig, filterConfig, analysisConfig, boxConfig, olapConfig, metadataViewerConfig, chartConfig, mapCreatorConfig, reportConfig, mapConfig, dashboardConfig], {
         placeholders: {"FENIX_CDN": "//fenixrepo.fao.org/cdn"},
         config: {
-            waitSeconds : 30,
+            waitSeconds: 30,
 
             // Specify the paths of vendor libraries
             paths: {
@@ -107,25 +107,9 @@ require([
                 underscore: "{FENIX_CDN}/js/underscore/1.7.0/underscore.min",
                 'packery': '{FENIX_CDN}/js/packery/1.4.3/dist/packery.pkgd.min',
 
-                'host/config' : '../../config/config',
+                'host/config': '../../config/config',
                 'fx-menu/templates': '../../scripts/templates',
-
-
-                //Components configuration
-                //            "fx-catalog/config/fx-catalog-blank-filter": '../../config/submodules/catalog/blankFilter',
-                //              'fx-analysis/config/services' : '../../config/submodules/analysis/services',
-
-
-//                'fx-catalog/config/config' : '../../config/submodules/fx-catalog/configAnalisi',
                 'fx-common/config/auth_users': "../../config/auth_users.json",
-
-                //    'fx-submodules/config/baseConfig': '../../config/submodules/config_base',
-
-                // METADATA VIEWER
-                //      'fx-md-v/config/': '../../config/submodules/fx-md-viewer/',
-                //        'fx-md-v/config/config': '../../config/submodules/fx-md-viewer/config',
-
-                //          'fx-report/config/md-export/config': '../../config/submodules/fx-report/md-export/config'
             },
 
             // Underscore and Backbone are not AMD-capable per default,
@@ -141,7 +125,13 @@ require([
         }
     });
 
-    require(['host'], function (Host) {
+    require([
+        'loglevel',
+        'host'
+    ], function (log, Host) {
+
+        //trace, debug, info, warn, error, silent
+        log.setLevel('silent');
 
         new Host().start();
 
