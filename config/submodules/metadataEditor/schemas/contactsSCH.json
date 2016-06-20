@@ -1,0 +1,63 @@
+﻿{
+    "title": "Contacts",
+    "type": "object",
+    "properties": {
+        "dataCollector": {
+            "title": "Data Collector",
+            "type": "object",
+            "required": [ "organization" ],
+            "properties": {
+                "organization": {
+                    "title": "Organization",
+                    "type": "string"
+                },
+                "organizationUnit": {
+                    "type": "string",
+                    "title": "Organization unit/division"
+                },
+                "pointOfContact": {
+                    "title": "Point of contact",
+                    "type": "string"
+                },
+                "position": {
+                    "type": "string",
+                    "title": "Position"
+                },
+                "role": {
+                    "title": "Role"
+                },
+                "specify": {
+                    "type": "string",
+                    "title": "Specify"
+                },
+                "contactInfo": {
+                    "type": "object",
+                    "title": "Contact information",
+                    "properties": {
+                        "phone": {
+                            "title": "Telephone number",
+                            "type": "string"
+                        },
+                        "address": {
+                            "title": "Address",
+                            "type": "string"
+                        },
+                        "emailAddress": {
+                            "title": "E-mail address",
+                            "type": "string"
+                        },
+                        "hoursOfService": {
+                            "type": "string",
+                            "title": "Hour of service"
+                        },
+                        "contactInstruction": {
+                            "type": "string",
+                            "title": "Instruction"
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
